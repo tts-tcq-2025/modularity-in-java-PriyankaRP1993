@@ -7,14 +7,14 @@ import colorcoder.MinorColor;
 public final class Main {
 
     private static void testNumberToPair(int pairNumber, MajorColor expectedMajor, MinorColor expectedMinor) {
-        ColorPair colorPair = ColorPair.fromPairNumber(pairNumber);
+        ColorPairMapper colorPair = ColorPairMapper.fromPairNumber(pairNumber);
         System.out.println("Got pair " + colorPair);
         assert colorPair.getMajor() == expectedMajor;
         assert colorPair.getMinor() == expectedMinor;
     }
 
     private static void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber) {
-        int pairNumber = ColorPair.toPairNumber(major, minor);
+        int pairNumber = ColorPairMapper.toPairNumber(major, minor);
         System.out.println("Got pair number " + pairNumber);
         assert pairNumber == expectedPairNumber;
     }
