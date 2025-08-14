@@ -1,6 +1,6 @@
 package colorcoder;
 
-import colorcoder.ColorPair;
+import colorcoder.ColorPairMapper;
 import colorcoder.MajorColor;
 import colorcoder.MinorColor;
 
