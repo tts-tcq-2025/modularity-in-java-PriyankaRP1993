@@ -1,5 +1,9 @@
 package colorcoder;
 
+import colorcoder.colorPair;
+import colorcoder.MajorColor;
+import colorcoder.MinorColor;
+
 public final class Main {
 
     private static void testNumberToPair(int pairNumber, MajorColor expectedMajor, MinorColor expectedMinor) {
